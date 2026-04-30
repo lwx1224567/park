@@ -1,0 +1,8 @@
+packages:
+  - internal/*
+  - packages/*
+  - apps/*
+ignoredBuiltDependencies:
+  - core-js
+  - esbuild
+  - vue-demi

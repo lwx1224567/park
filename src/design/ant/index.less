@@ -1,0 +1,165 @@
+@import './pagination.less';
+@import './input.less';
+@import './btn.less';
+@import './popconfirm.less';
+
+.ant-image-preview-root {
+  img {
+    display: unset;
+  }
+}
+
+.ant-back-top {
+  right: 20px;
+  bottom: 20px;
+}
+
+.collapse-container__body {
+  > .ant-descriptions {
+    margin-left: 6px;
+  }
+}
+
+.ant-image-preview-operations {
+  background-color: rgb(0 0 0 / 30%);
+}
+
+.ant-popover {
+  &-content {
+    box-shadow: 0 2px 12px 0 rgb(0 0 0 / 10%);
+  }
+}
+
+// =================================
+// ==============modal message======
+// =================================
+.modal-icon-warning {
+  color: @warning-color !important;
+}
+
+.modal-icon-success {
+  color: @success-color !important;
+}
+
+.modal-icon-error {
+  color: @error-color !important;
+}
+
+.modal-icon-info {
+  color: @primary-color !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner::after,
+.ant-tree-checkbox-checked .ant-tree-checkbox-inner::after {
+  border-top: 0 !important;
+  border-left: 0 !important;
+}
+
+.ant-form-item-control-input-content {
+  > div {
+    > div {
+      max-width: 100%;
+    }
+  }
+}
+
+.ant-radio-inner,
+.ant-input-number,
+.ant-input-wrapper,
+.ant-input-affix-wrapper,
+.ant-select-selector,
+.ant-checkbox-inner,
+.ant-picker {
+  border-color: rgb(0 144 197 / 90%) !important;
+  background-color: rgb(1 56 129 / 90%) !important;
+
+  .ant-input {
+    border-color: rgb(0 144 197 / 90%) !important;
+    background-color: transparent !important;
+  }
+}
+
+.ant-input {
+  border-color: rgb(0 144 197 / 90%) !important;
+  background-color: rgb(1 56 129 / 90%) !important;
+}
+
+.ant-radio-group,
+.ant-checkbox-group {
+  width: 100%;
+}
+
+//数字输入框样式调整
+.ant-input-number {
+  .ant-input-number-handler-wrap {
+    background-color: rgb(11 85 164 / 80%) !important;
+
+    .ant-input-number-handler {
+      border-color: rgb(0 170 221 / 40%) !important;
+    }
+  }
+}
+
+//下拉选择框，下拉内容样式
+.ant-select-dropdown {
+  background-color: rgb(3 42 72 / 98%) !important;
+
+  .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+    // background-color: rgba(255, 255, 255, 0.2);//鼠标悬停颜色
+  }
+
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background-color: rgb(0 170 221 / 20%) !important; //选中颜色
+  }
+}
+
+//时间选择框，下拉内容样式
+.ant-picker-dropdown {
+  .ant-picker-range-arrow {
+    &::before {
+      background: rgb(3 42 72 / 98%) !important; //时间选择框箭头背景色
+    }
+  }
+
+  .ant-picker-panel-container {
+    background: rgb(3 42 72 / 98%) !important; //时间选择框背景色
+  }
+
+  .ant-picker-time-panel-cell-selected {
+    .ant-picker-time-panel-cell-inner {
+      background: rgb(0 170 221 / 20%) !important; //时间被选中颜色
+    }
+  }
+
+  .ant-picker-cell-in-range {
+    &::before {
+      background: rgb(0 170 221 / 20%) !important; //日期被选中颜色
+    }
+  }
+
+  .ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single),
+  .ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single) {
+    &::before {
+      background: rgb(0 170 221 / 20%) !important; //日期被选中颜色
+    }
+  }
+}
+
+//分页组件输入框样式
+.ant-pagination {
+  .ant-pagination-simple-pager {
+    input {
+      border: 1px solid rgb(0 170 221 / 40%) !important;
+      background-color: rgb(11 85 164 / 30%) !important;
+    }
+  }
+
+  .ant-pagination-options {
+    .ant-pagination-options-quick-jumper {
+      input {
+        border: 1px solid rgb(0 170 221 / 40%) !important;
+        background-color: rgb(11 85 164 / 30%) !important;
+      }
+    }
+  }
+}
